@@ -1,0 +1,90 @@
+/* General Styles */
+html {
+    background-color: rgb(104, 104, 103);
+}
+
+body {
+    font-family: 'Verdana', 'Arial', 'Helvetica', sans-serif;
+    background-color: white;
+    border: 3px solid black;
+    background-image: linear-gradient(to bottom, white 0%, #c0fa8a 100%);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-top: 20px;
+    background: linear-gradient(90deg, rgba(52,171,150,1) 0%, rgba(105,238,192,1) 76%, rgba(43,191,135,1) 99%);
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    padding-left: 25px;
+    color: orange;
+    font-family: "Unlock", serif;
+}
+
+header h2 {
+    padding-left: 160px;
+    color: black;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav .nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    clear: both;
+    margin-top: 1em;
+    border-top: 2px solid #f2972e;
+    padding-top: .7em;
+    text-align: center;
+}
+
+/* Product Card Styles */
+.card {
+    margin: 10px 0;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the area */
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9em;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h2 {
+        padding-left: 20px;
+    }
+
+    .nav-pills {
+        flex-direction: column; /* Stack navigation items on smaller screens */
+    }
+
+    .container {
+        padding: 0 10px; /* Add some padding for mobile view */
+    }
+}
